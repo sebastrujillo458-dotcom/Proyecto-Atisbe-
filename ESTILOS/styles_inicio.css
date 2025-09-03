@@ -61,7 +61,7 @@ body {
 
 .downmenu-contenido li a:hover {
     background-color: rgb(0, 0, 0);
-    color: rgb(131, 133, 255);
+    color: rgb(10, 10, 10);
 }
 
 .downmenu:hover .downmenu-contenido {
