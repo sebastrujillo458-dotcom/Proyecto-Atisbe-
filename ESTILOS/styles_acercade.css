@@ -1,0 +1,68 @@
+/*ESTILO CUERPO PAGINA*/
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    ;
+}
+
+/*-----------------------------------------*/
+/*ESTILO MENU*/
+.navbar {
+    /*crea el estilo de la barra de menu*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(131, 133, 255);
+    padding: 5px 10px;
+}
+
+.menu {
+    list-style: none;
+    /*quita los asteriscos o puntos en las listas*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /*coloca los elementos en horizontal*/
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.menu li a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(131, 133, 255);
+    border-radius: 60px;
+}
+
+.downmenu-contenido {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    background-color: rgb(131, 133, 255);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.downmenu-contenido li a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(131, 133, 255);
+}
+
+.downmenu:hover .downmenu-contenido {
+    display: block;
+}
